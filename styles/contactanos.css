@@ -1,0 +1,585 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container{
+    width: 70%;
+    max-width: 1100px;
+    margin: auto;
+
+}
+
+header{
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #210140;
+    padding: .9rem 11rem;
+    position: fixed;
+    z-index: 4;
+}
+.logo{
+    width: 4rem;
+    height: 4rem;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+/**/
+.navbar{
+    transition: all .5s;
+}
+.navbar.hide{
+    transform: translateY(-100%);
+    transition: all .5s;
+}
+/**/
+
+nav a{
+    color: white;
+    padding: 0px 1rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+nav .active{
+    color: #fdbe10;
+}
+
+nav a:hover{
+    color: #fdbe10;
+}
+nav button{
+    padding: .5rem .8rem;
+    border: none;
+    background: #fb8710;
+    color: white;
+    border-radius: 5px;
+    font-size: .9rem;
+    font-weight: 800;
+    transition: all .5s;
+
+}
+nav button:hover{
+    background: #ffffff;
+    color: #fb8710;
+}
+
+
+/*==========    ICONO RESPONSIVE ========*/
+header .btn-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 100;
+    display: none;
+}
+/*========  SECTION-CONOCENOS==========*/
+.section-contact{
+    width: 100%;
+    padding: 9rem 0px 3rem 0px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-contact .container{
+    display: flex;
+}
+.section-contact .info-1 h2{
+    font-size: 3.2rem;
+    color: #fb8710;
+    padding-bottom: 1rem;
+}
+.section-contact .info-1 h3{
+    font-size: 3rem;
+    color: #210140;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.section-contact .info-1 span{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #fb8710;
+    font-weight: 600;
+}
+.section-contact .info-1 h4{
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    color: rgb(136, 136, 136);
+    text-transform: capitalize;
+    font-weight: 400;
+    letter-spacing: 0px;
+}
+
+
+
+/*==========    ICONOS FLOTANTES    =======*/
+
+.section-contact .info-iconos{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: right;
+    position: absolute;
+    position: fixed;
+    right: 3rem;
+    bottom: 1rem;
+    z-index: 3;
+}
+.section-contact .info-iconos a{
+    display: block;
+    color: white;
+    margin-bottom: 1rem;
+    padding: 5px;
+    background: #fb8710;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    transition: all .5s;
+}
+.section-contact .info-iconos a:hover{
+    background: rgb(119, 119, 119);
+}
+.section-contact .icono-chat{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 220px;
+    height: 60px;
+    border-radius: 5px;
+    transition: all .5s;
+    background-color: #fb8710;
+    color: white;
+}
+.section-contact .icono-chat span{
+    font-size: 1rem;
+    margin-left: 7px;
+}
+.section-contact .icono-chat i{
+    font-size: 3rem;
+}
+.section-contact .icono-chat:hover{
+    background: rgb(119, 119, 119);
+}
+
+
+/*======*/
+/*===ICONO CHAT RESPONSIVE   ===*/
+.section-contact .chat-responsive i{
+    font-size: 3rem;
+    color: #ffff;
+    position: absolute;
+    right: 1rem;
+    bottom: 2rem;
+    position: fixed;
+    display: none;
+    background: rgb(149, 149, 255);
+    border-radius: 50px;
+    padding: .7rem;
+}
+
+
+/*======*/
+
+/**/
+.section-contact .info-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.section-contact .info-2 svg{
+    height: 5rem;
+    width: 5rem;
+    color: #fb8710;
+}
+.section-contact .info-2 aside h2{
+    font-size: 2.5rem;
+    color: #fb8710;
+}
+.section-contact .info-2 aside button{
+    padding: .5rem .8rem;
+    border: none;
+    background: #fb8710;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 800;
+    transition: all .5s;
+}
+.section-contact .info-2 aside button:hover{
+    background: #ffffff;
+    color: #fb8710;
+}
+.section-contact .info-2 aside h3{
+    color: #fb8710;
+    font-size: 2.5rem;
+}
+
+/*===========   formulario  ===========*/
+.cont-form{
+    padding: 2rem 0px;
+    width: 100%;
+}
+.cont-form form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .5rem;
+}
+
+.cont-form form label{
+    color: black;
+    font-size: .8rem;
+    font-weight: bolder;
+
+}
+.cont-form form input:focus{
+    background-color: #eee0fa;
+}
+.cont-form form .input-text{
+    width: 100%;
+    border: none;
+    background: rgb(236, 236, 236);
+    height: 2.7rem;
+    border-radius: 7px;
+    margin: .5rem 0px;
+    padding-left: .5rem;
+}
+.cont-form form .labels-radios{
+    grid-column: 1/3;
+}
+.cont-form form .label-radio{
+    grid-column: 1/3;
+    display: flex;
+    align-items: center;
+}
+.cont-form form .label-radio input{
+    margin: 0px 2rem;
+}
+
+:focus-visible{
+    outline: 1px solid #210140;
+}
+.cont-form form .block{
+    grid-column: 1/3;   
+}
+.cont-form form textarea{
+    width: 100%;
+    border: none;
+    background: rgb(236, 236, 236);
+    height: 8rem;
+    border-radius: 7px;
+    padding: .5rem;
+    resize: none;
+    margin-top: .5rem;
+}
+.cont-form form textarea:focus{
+    background-color: #eee0fa;
+}
+form .block{
+    width: 100%;
+    text-align: center;
+}
+form .block button{
+    display: flex;
+    justify-content: center;
+}
+.cont-form form .radio-input{
+    font-size: 2px;
+}
+.cont-form form .block-submit{
+    grid-column: 1/3;
+    text-align: center;
+    padding-top: 2rem;
+}
+.cont-form form .block-submit .button-submit{
+    padding: .7rem 5rem;
+    border: none;
+    background: #fb8710;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 800;
+    transition: all .5s;
+}
+.cont-form form .block-submit .button-submit:hover{
+    background: #ffffff;
+    color: #fb8710;
+}
+/*======      quitar flechas en input numbers     =======*/
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+/*============  SECTION ADDRESS=============*/
+.section-address{
+    width: 100%;
+    padding: 3rem 0px 4rem 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section-address .container{
+    text-align: center;
+}
+.section-address h2{
+    font-size: 3rem;
+    color: #fb8710;
+}
+.section-address span{
+    color: #210140;
+}
+.section-address .container article{
+    padding: 1rem 5px 5rem 5px;
+}
+.section-address iframe{
+    width: 100%;
+    height: 600px;
+    
+}
+.section-address .btn-inicio-contact{
+    padding: .5rem 2rem;
+    font-weight: 300;
+    font-size: .8rem;
+    background: none;
+    color: rgb(90, 90, 90);
+    cursor: pointer;
+    border: none;
+    transition: all .5s;
+    text-transform: uppercase;
+}
+.section-address .btn-inicio-contact:hover{
+    padding: .5rem 2rem;
+    color: white;
+    background: #fb8710;
+    transition: all .5s;
+    border-radius: 5px;
+    border: none;
+}
+
+
+
+
+/*========  FOOTER       =======*/
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 11rem;
+    background: #f3f3f3;
+}
+.footer figure img{
+    width: 200px;
+    height: 85px;
+}
+.footer figure, 
+.footer .card-local {
+    margin-left: 1rem;
+}
+.footer .card-local{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    padding: 0px .5rem;
+}
+.footer .card-local a{
+    padding-bottom:.5rem ;
+    font-size: .9rem;
+    color: rgb(129, 129, 129);
+    text-decoration: none;
+}
+
+.footer .cont-button{
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    padding: .5rem 1.2rem;
+    background-color: #210140;
+    color: white;
+    font-weight: 800;
+    transition: all .5s;
+}
+.footer .cont-button:hover{
+    background-color: rgb(119, 119, 119);
+}
+
+/*============      MEDIA QUERY     ==========*/
+@media (max-width: 1053px){
+    header{
+    width: 100%;
+    padding: .9rem 4rem;
+    }
+}
+
+@media (max-width: 932px){
+    .section-contact .info-iconos{
+        display: none;
+    }
+    .section-contact .chat-responsive i{
+        display: block;
+        z-index: 3;
+    }
+}
+
+@media (max-width: 835px){
+    header{
+    width: 100%;
+    padding: .9rem 2rem;
+    }
+}
+/*==========    MENU RESPONSIVE ========*/
+@media (max-width: 765px){
+    /*==========    MENU RESPONSIVE ========*/
+    header .btn-menu{
+        display: block;
+    }
+    header nav a{
+        display: none;
+    }
+
+    header nav button{
+        display: none;
+    }
+    /**/
+    .container-menu{
+        position: absolute;
+        background: #210140;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        transition: all 500ms ease;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 4;
+        position: fixed;
+    }
+    #btn-menu:checked ~ .container-menu{
+        opacity: 1;
+        visibility: visible;
+    }
+    .cont-menu{
+        width: 100%;
+        background: #210140;
+        height: 100vh;
+        position: relative;
+        transition: all 500ms ease;
+        transform: translateX(-100%);
+    }
+    #btn-menu:checked ~ .container-menu .cont-menu{
+        transform: translateX(0%);
+    }
+    .cont-menu nav{
+        transform: translateY(15%);
+    }
+    .cont-menu nav a{
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        padding: 20px;
+        transition: all 400ms ease;
+    }
+    .cont-menu nav a:hover{
+        color: #fb8710;
+    }
+    .cont-menu label{
+        position: absolute;
+        right: 45px;
+        top: 30px;
+        color: #ffffff;
+        cursor: pointer;
+        font-size: 1.7rem;
+    }
+    
+    
+}
+
+/*================*/
+@media (max-width: 757px){
+    .section-contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-contact .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-contact .container .info-2{
+        padding-top: 2.5rem;
+    }
+}
+@media (max-width: 704px){
+    .container{
+        width: 85%;
+    }
+}
+
+/*========  FOOTER  ========*/
+@media (max-width: 704px){
+    .footer{
+        width: 100%;
+        padding: 3rem 1rem;
+    }
+}
+
+@media (max-width: 639px){
+    .footer{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+    .footer figure,
+    .footer article {
+        text-align: center;
+    }
+    .footer div{
+        text-align: center;
+    }
+    .section-clientes{
+        padding: 6rem 2rem;
+    }
+}
+
+/*=========  FORMULARIO   =======*/
+@media (max-width: 610px){
+    
+    .cont-form .container .contact-form form{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 441px){
+    .cont-form form .radio-input{
+        font-size: 1.5px;
+    }
+}
