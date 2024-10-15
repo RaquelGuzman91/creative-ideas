@@ -103,49 +103,52 @@ header .btn-menu{
 .section-digitales{
     min-width: 100%;
     min-height: 105vh;
-    background: url('imagenes-pagina-enlaces/banner-medios-digitales2.png') no-repeat center center/cover;
+    background: url('imagenes-pagina-enlaces/banner-call-center.png') no-repeat center center/cover;
     background-attachment: fixed;
+    padding: 2rem 9rem;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    padding: 2rem 8rem;
-}
-.text-digitales{
+    align-items: start;
     position: relative;
-    padding-top: 4rem;
 }
-.texto-titulos{
-    position:absolute;
-    bottom: 0px;
-    left: 0px;
+
+.section-title{
+    position: absolute;
+    top: 30%;
+    left: 4%;
     transform: rotate(-90deg);
     transform: rotate(-90deg);
 }
-.text-digitales h2{
-    font-size: 5rem;
+.section-title h2{
+    font-size: 4.5rem;
     font-weight: 900;
-    color: white;
-    line-height: 2rem;
-    text-align: right;
-}
-.text-digitales h3{
     color: #210140;
-    font-size: 5rem;
-    font-weight: 700;
+    line-height: 2rem;
+
 }
+.section-title h3{
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: #fb8710;
+}
+
 .text-hashtag{
-    color: white;
+    color: #210140;
     font-size: 2rem;
     display: flex;
     position: absolute;
-    right: 11rem;
+    bottom: 15%;
+    left: 10%;
 }
 .text-hashtag .span-one{
     font-size: 4rem;
     font-weight: 100;
+
 }
 .text-hashtag .info-titulos .is{
-    background: #210140;
+    background: #fb8710;
+    color: white;
     padding: .3rem;
     border-radius: 4px;
     font-size: 1.5rem;
@@ -163,7 +166,7 @@ header .btn-menu{
 .section-digitales-responsive{
     min-width: 100%;
     min-height: 105vh;
-    background: url('imagenes-pagina-enlaces/banner-medios-digitales2.png');
+    background: url('imagenes-pagina-enlaces/banner-call-center-responsivo.png');
     background-size: 100% 93%;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -174,8 +177,8 @@ header .btn-menu{
 }
 .texto-titulos-responsive{
     position: absolute;
-    top: 7rem;
-    right: 2rem;
+    top: 12rem;
+    left: 2rem;
 }
 .text-hashtag-responsive{
     position: absolute;
@@ -183,13 +186,13 @@ header .btn-menu{
     left: 50%;
 }
 .section-digitales-responsive .texto-titulos-responsive h2{
-    color: white;
-    font-size: 6vw;
+    color: #210140;
+    font-size: 7.5vw;
     line-height: 1.5rem;
 }
 .section-digitales-responsive .texto-titulos-responsive h3{
-    color: #210140;
-    font-size: 6vw;
+    color: #fb8710;
+    font-size: 8vw;
     font-weight: 600;
 }
 .text-hashtag-responsive .container-hast{
@@ -282,42 +285,47 @@ header .btn-menu{
     padding: .7rem;
     z-index: 3;
 }
-/*===*/
 
-/*------  SECTION INFO  ---------*/
-.section-info{
+/* ------       SECTION INFORMATION     --------*/
+.section-information{
+    min-width: 100%;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     padding: 3rem 0rem;
 }
-.section-info .container-info{
+.section-information .container-information{
     width: 60%;
 }
-.section-info h2{
+/*------ TEXTO INFORMATION  ---------*/
+.container-information h2{
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #210140;
     text-align: center;
 }
-.section-info h3{
+.container-information h3{
     color: #fb8710;
     width: 100%;
     text-align: right;
     padding: .5rem;
     font-weight: 900;
 }
-.section-info p{
+.container-information p{
     padding: 1rem 0px;
     font-size: clamp(13px, 2vw, 20px);/*---------------*/
     color: #210140;
 }
-.container-info img{
-    width: 100%;
+.container-information a{
+    color: #210140;
+    font-weight: 600;
 }
+/*-----     SECTION BUTTON      -------*/
 .container-button{
-    padding: 2rem;
+    padding: 3rem;
+    text-align: center;
 }
 .container-button .btn-inicio{
     padding: .5rem 2rem;
@@ -339,7 +347,7 @@ header .btn-menu{
     border: none;
 }
 
-
+/*------    FOOTER      -------*/
 /*========  FOOTER       =======*/
 .footer{
     width: 100%;
@@ -388,65 +396,21 @@ header .btn-menu{
 }
 
 
-/*============      MEDIA QUERY     ==========*/
-/*-----     MEDIA BANNER    -------*/
-@media (max-width: 1100px){
-    .section-digitales{
-        padding: 2rem 2rem;
-    }
-    .text-digitales h2,
-    .text-digitales h3{
-        font-size: 4rem;
-    }
-    .text-hashtag{
-        right: 5rem;
-    }
-}
+/*------        RESPONSIVE      -------*/
 /*============  ===========*/
 @media (max-width: 1053px){
     header{
     width: 100%;
     padding: .9rem 4rem;
     }
-    .section-texto .container{
-        padding: 4rem 3rem;
-    }
-    .container .info-box{
-        width: 80%;
-    }
-}
-@media (max-width: 932px){
-    /*SECTION INICIO*/
-    .section-digitales{
-        display: none;
-    }
-    .section-digitales .info-iconos{
-        display: none;
-    }
-    .section-digitales-responsive .chat-responsive i{
-        display: block;
-    }
-    .section-digitales-responsive{
-        display: block;
-    }
-
     
 }
-
-/*-----      SECTION INFO   ------*/
-@media(max-width: 919px){
-    .section-info .container-info{
-        width: 80%;
-    }
-}
-
 @media (max-width: 835px){
     header{
         width: 100%;
         padding: .9rem 2rem;
         }
 }
-
 
 /*==========    MENU RESPONSIVE ========*/
 @media (max-width: 765px){
@@ -520,73 +484,94 @@ header .btn-menu{
     /*==========    MENU RESPONSIVE ========*/
 
 
+    @media (max-width: 932px){
+        /*SECTION INICIO*/
+        .section-digitales{
+            display: none;
+        }
+        .section-digitales .info-iconos{
+            display: none;
+        }
+        .section-digitales-responsive .chat-responsive i{
+            display: block;
+        }
+        .section-digitales-responsive{
+            display: block;
+        }
+    
+        
+    }
+
     /*-----                -------*/
-@media (max-width: 765px){
+    @media (max-width: 765px){
+        .section-digitales-responsive{
+            background-size: 100% 85%;
+            padding: 2rem 3rem;
+            border: 1rem solid white;
+        }
+        .texto-titulos-responsive{
+            position: absolute;
+            top: 35%;
+            right: 2rem;
+        }
+    }
+
+    @media (max-width: 551px){
+            /*==========    SECTION INICIO MEDIOS DIGITALES    ========*/
     .section-digitales-responsive{
+        min-width: 100%;
+        min-height: 105vh;
+        background: url('imagenes-pagina-enlaces/banner-call-center-mobile.png');
         background-size: 100% 85%;
+        background-repeat: no-repeat;
+        background-position: bottom;
         padding: 2rem 3rem;
+        position: relative;
         border: 1rem solid white;
     }
     .texto-titulos-responsive{
         position: absolute;
-        top: 35%;
-        right: 2rem;
+        top: 17rem;
+        left: 1rem;
     }
-
-}
-
-@media (max-width: 450px){
-    .section-digitales-responsive{
-    min-width: 100%;
-    min-height: 85vh;
-    background: url('imagenes-pagina-enlaces/banner-medios-digitales2.png');
-    background-size: 100% 83%;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    padding: 2rem 3rem;
-    position: relative;
-    border: 1rem solid white;
-    }
-}
-
-@media (max-width: 636px){
     .text-hashtag-responsive{
-        left: 33%;
+        position: absolute;
+        bottom: 0;
+        left: 30%;
     }
-}
-@media (max-width: 420px){
-    .text-hashtag-responsive{
-        left: 26%;
     }
-}
+    /*-----      SECTION INFO   ------*/
+    @media(max-width: 919px){
+        .section-information .container-information{
+            width: 80%;
+        }
+    }
 
-    /*-------       RESPONSIVE FOOTER       */
+
+
+/*-------       RESPONSIVE FOOTER       */
     /*========  FOOTER  ========*/
-@media (max-width: 704px){
-    .footer{
-        width: 100%;
-        padding: 3rem 1rem;
+    @media (max-width: 704px){
+        .footer{
+            width: 100%;
+            padding: 3rem 1rem;
+        }
     }
-}
-
-@media (max-width: 639px){
-    .footer{
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 1rem;
+    
+    @media (max-width: 639px){
+        .footer{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 1rem;
+        }
+        .footer figure,
+        .footer article {
+            text-align: center;
+        }
+        .footer div{
+            text-align: center;
+        }
+        
     }
-    .footer figure,
-    .footer article {
-        text-align: center;
-    }
-    .footer div{
-        text-align: center;
-    }
-    .section-clientes{
-        padding: 6rem 2rem;
-    }
-}
-
-/*----      */

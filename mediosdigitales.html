@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>medios digitales | Creative ideass</title>
+    <title>medios digitales | Creative ideas</title>
     <link rel="stylesheet" href="styles/mediosdigitales.css">
     <script src="https://kit.fontawesome.com/f8b8acee64.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="paginas/imagenes/logo.png">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    
 </head>
 <body>
 
 
      <!--======  header  ======-->
-     <header class="header container">
+     <header class="header container navbar">
         <div class="logo">
             <img src="paginas/imagenes/logo.png" alt="">
         </div>
@@ -50,28 +53,91 @@
 
     <!--===========     SECTION BANNER      =========-->
     <section class="section-digitales"> 
-        <article>
-            <h2>MEDIOS</h2>
-            <h3>DIGITALES</h3>
-        </article>
-        <article>
-            <div class="info-titulos">
-                <span>#</span>
-                <h3> This <span>is</span> <br> CREATIVE IDEAS</h3>
+            <article class="text-digitales">
+                <div class="texto-titulos">
+                    <h2>MEDIOS</h2>
+                    <h3>DIGITALES</h3>
+                </div>
+            </article>
+            <article class="text-hashtag">
+                <span class="span-one">#</span>
+                <div class="info-titulos">
+                    <h3> <span class="span-two">THIS</span>  <span class="is">IS</span> <br> CREATIVE IDEAS</h3>
+                </div>
+            </article>
+
+            <article class="info-iconos">
+                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://gt.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.tiktok.com/es/"><i class="fa-brands fa-tiktok"></i></a>
+                <div class="icono-chat">
+                    <a href="#"><i class="icon-flot-chat fa-brands fa-rocketchat chat"><span>Vamos a chatear</span></i></a>
+                </div>
+            </article>
+  
+    </section>
+
+    <!--     SECTION DIGITALES RESPONSIVE       -->
+    <section class="section-digitales-responsive"> 
+        
+            <div class="texto-titulos-responsive">
+                <h2>MEDIOS</h2>
+                <h3>DIGITALES</h3>
             </div>
-        </article>
+        
+            <article class="text-hashtag-responsive">
+                <div class="container-hast">
+                    <span class="span-one">#</span>
+                    <div class="info-titulos">
+                        <h3> <span class="span-two">THIS</span>  <span class="is">IS</span> <br> CREATIVE IDEAS</h3>
+                    </div>
+                </div>
+            </article>
+       
+
+        <div class="chat-responsive">
+            <a href="#"><i class="fa-regular fa-comment-dots"></i></a>
+        </div>
+
     </section>
 
     <!--============    SECTION INFO    ===========-->
-    <section>
-        <h2>"Nuestras ideas hacen marcas grandes"</h2>
-        <h3>Grupo Creative Ideas</h3>
-        <p>En Creative Ideas trabajamos con medios digitales que se adaptan a tus necesidades. Creamos campañas en Facebook, Instagram, YouTube, Pinterest, LinkedIn, o la que se adapte a tu plan de mercadeo. <br>
-            Te asesoramos para lanzar tus campañas en Google Adwords para llegar puntualmente a las personas que se interesan en tu producto o servicio. <br>
-            Realizamos las publicaciones que necesitas, cuando las necesitas, siguiendo tu línea gráfica o ayudándote a definir una. <br>
-            Si no tienes una página web, te creamos una desde cero, totalmente responsive para visualizarla desde cualquier dispositivo, además te ayudamos a obtener tu propio dominio para que tus clientes te encuentren en Google.</p>
+    <section class="section-info">
+        <article class="container-info">
+            <h2>"Nuestras ideas hacen marcas grandes"</h2>
+            <h3>Grupo Creative Ideas</h3>
+            <p>En Creative Ideas trabajamos con medios digitales que se adaptan a tus necesidades. Creamos campañas en Facebook, Instagram, YouTube, Pinterest, LinkedIn, o la que se adapte a tu plan de mercadeo.</p> 
+            <p>Te asesoramos para lanzar tus campañas en Google Adwords para llegar puntualmente a las personas que se interesan en tu producto o servicio.</p>
+            <p>Realizamos las publicaciones que necesitas, cuando las necesitas, siguiendo tu línea gráfica o ayudándote a definir una.</p>
+            <p>Si no tienes una página web, te creamos una desde cero, totalmente responsive para visualizarla desde cualquier dispositivo, además te ayudamos a obtener tu propio dominio para que tus clientes te encuentren en Google.</p>   
 
-            <img src="" alt="">
+            <img src="styles/imagenes-pagina-enlaces/mediosdigitalesII.png" alt="">
+        </article>
+        <article class="container-button">
+            <button id="button-up" class="btn-inicio">Volver al inicio</a></button>
+        </article>
     </section>
+
+    <!--===========     ==========-->
+    <footer class="footer">
+        <figure>
+            <img src="paginas/imagenes/logoconsloganmorado.png" alt="">
+        </figure>
+        <article class="card-local">
+            <a href="#">Calzada Aguilar Batres 45-54, Oficinas Empresarial Monte María, 2do. nivel, Of. 206-212, Zona 11.</a>
+            <a href="#">PBX: (502) 6632-3434</a>
+            <a class="subrayado" href="#">info@grupocreativeideas.com</a>
+        </article>
+        <div>
+        <button class="cont-button">Contáctanos</button>
+        </div>
+    </footer>
+
+
+    <!--=====   JAVASRIPTS======-->
+    <script src="efects.js"></script>
+    <script src="main.js"></script>
+
 </body>
 </html>
