@@ -538,9 +538,9 @@ header .btn-menu{
 @media (max-width: 450px){
     .section-digitales-responsive{
     min-width: 100%;
-    min-height: 85vh;
+    min-height: 60vh;
     background: url('imagenes-pagina-enlaces/banner-medios-digitales2.png');
-    background-size: 100% 83%;
+    background-size: 100% 80%;
     background-repeat: no-repeat;
     background-position: bottom;
     padding: 2rem 3rem;

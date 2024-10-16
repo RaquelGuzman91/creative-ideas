@@ -516,13 +516,13 @@ header .btn-menu{
         }
     }
 
-    @media (max-width: 551px){
+    @media (max-width: 450px){
             /*==========    SECTION INICIO MEDIOS DIGITALES    ========*/
     .section-digitales-responsive{
         min-width: 100%;
-        min-height: 105vh;
+        min-height: 60vh;
         background: url('imagenes-pagina-enlaces/banner-call-center-mobile.png');
-        background-size: 100% 85%;
+        background-size: 100% 80%;
         background-repeat: no-repeat;
         background-position: bottom;
         padding: 2rem 3rem;
@@ -531,7 +531,7 @@ header .btn-menu{
     }
     .texto-titulos-responsive{
         position: absolute;
-        top: 17rem;
+        top: 12rem;
         left: 1rem;
     }
     .text-hashtag-responsive{
